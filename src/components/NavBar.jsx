@@ -74,10 +74,10 @@ function NavBar() {
           </li>
           <li>
             <Link
-              to="/signup"
+              to="/login"
               className="text-white hover:text-orange-500 text-lg font-bold"
             >
-              Signup
+              Login
             </Link>
           </li>
         </ul>
