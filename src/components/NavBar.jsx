@@ -14,7 +14,8 @@ function NavBar() {
     <nav className="bg-blue-700 bg-opacity-50 shadow-md">
       <div className="flex justify-between items-center py-4 px-8">
         <Link to="/" className="text-white text-lg font-bold">
-          Logo
+          <span className="text-amber-500 text-2xl">G</span>URO{" "}
+          <span className="text-amber-500 text-2xl">A</span>PP
         </Link>
         <div className="md:hidden">
           <button
