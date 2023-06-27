@@ -32,11 +32,17 @@ function Signup() {
   };
 
   return (
-    <div className="bg-blue-900 h-screen flex justify-center items-center">
-      <div className="bg-blue-200 p-8 rounded shadow-md">
+    <div
+      style={{ backgroundColor: "#004D8F" }}
+      className="h-screen flex justify-center items-center"
+    >
+      <div
+        style={{ backgroundColor: "#FF8E51" }}
+        className="p-8 rounded-lg shadow-md"
+      >
         {hasAccount ? (
           <>
-            <h2 className="text-2xl font-semibold mb-6">Login</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center">Login</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block mb-2" htmlFor="email">
@@ -64,24 +70,26 @@ function Signup() {
                   onChange={handleChange}
                 />
               </div>
-              <button
-                className="bg-blue-500 text-black px-4 py-2 rounded hover:bg-blue-600"
-                type="submit"
-              >
-                Login
-              </button>
+              <div className="flex justify-center">
+                <button
+                  className="bg-green-500 text-black px-4 py-2 rounded-lg hover:bg-green-400"
+                  type="submit"
+                >
+                  Login
+                </button>
+              </div>
             </form>
           </>
         ) : (
           <>
-            <h2 className="text-2xl font-semibold mb-6">Sign Up</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center">Sign Up</h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label className="block mb-2" htmlFor="name">
+                <label className="block mb-2 " htmlFor="name">
                   Name:
                 </label>
                 <input
-                  className="border border-gray-300 px-3 py-2 rounded w-64"
+                  className="border border-gray-300 px-3 py-2 rounded w-72"
                   type="text"
                   id="name"
                   name="name"
@@ -94,7 +102,7 @@ function Signup() {
                   Email:
                 </label>
                 <input
-                  className="border border-gray-300 px-3 py-2 rounded w-64"
+                  className="border border-gray-300 px-3 py-2 rounded w-72"
                   type="email"
                   id="email"
                   name="email"
@@ -107,7 +115,7 @@ function Signup() {
                   Password:
                 </label>
                 <input
-                  className="border border-gray-300 px-3 py-2 rounded w-64"
+                  className="border border-gray-300 px-3 py-2 rounded w-72"
                   type="password"
                   id="password"
                   name="password"
@@ -115,12 +123,14 @@ function Signup() {
                   onChange={handleChange}
                 />
               </div>
-              <button
-                className="bg-blue-500 text-black px-4 py-2 rounded hover:bg-blue-600"
-                type="submit"
-              >
-                Register
-              </button>
+              <div className="flex justify-center">
+                <button
+                  className="bg-green-500 text-black px-4 py-2 rounded-lg hover:bg-green-400"
+                  type="submit"
+                >
+                  Register
+                </button>
+              </div>
             </form>
             <p className="mt-4 text-center">
               Already have an account?{" "}
