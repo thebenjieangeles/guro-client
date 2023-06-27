@@ -1,4 +1,5 @@
 import { useState } from "react";
+import landingPage from "../assets/landingPage.png";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -33,7 +34,14 @@ function Signup() {
 
   return (
     <div
-      style={{ backgroundColor: "#004D8F" }}
+      style={{
+        backgroundImage: `url(${landingPage})`,
+        backGroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundColor: "#FFFBE0",
+      }}
       className="h-screen flex justify-center items-center"
     >
       <div
@@ -89,7 +97,7 @@ function Signup() {
                   Name:
                 </label>
                 <input
-                  className="border border-gray-300 px-3 py-2 rounded w-72"
+                  className="border border-gray-300 px-3 py-2 rounded w-80"
                   type="text"
                   id="name"
                   name="name"
@@ -102,7 +110,7 @@ function Signup() {
                   Email:
                 </label>
                 <input
-                  className="border border-gray-300 px-3 py-2 rounded w-72"
+                  className="border border-gray-300 px-3 py-2 rounded w-80"
                   type="email"
                   id="email"
                   name="email"
@@ -115,7 +123,7 @@ function Signup() {
                   Password:
                 </label>
                 <input
-                  className="border border-gray-300 px-3 py-2 rounded w-72"
+                  className="border border-gray-300 px-3 py-2 rounded w-80"
                   type="password"
                   id="password"
                   name="password"
