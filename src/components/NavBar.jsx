@@ -28,6 +28,30 @@ function NavBar() {
             Contact
           </Link>
         </li>
+        <li>
+          <Link
+            to="/policies"
+            className="text-white hover:text-orange-500 text-lg font-bold"
+          >
+            Policies
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/news"
+            className="text-white hover:text-orange-500 text-lg font-bold"
+          >
+            News
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/signup"
+            className="text-white hover:text-orange-500 text-lg font-bold"
+          >
+            Signup
+          </Link>
+        </li>
       </ul>
     </nav>
   );
