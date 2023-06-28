@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import landingPage from "../assets/landingPage.png";
 import axios from "axios";
 
@@ -22,12 +22,21 @@ function Login() {
     }
   };
 
+  axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
       .post("http://localhost:3001/login", { email, password })
       .then((res) => {
-        navigate("/dashboard");
+        console.log(res.data);
+        if (res.data.Status === "Success") {
+          if (res.data.role === "teacher") {
+            navigate("/teacher");
+          } else {
+            navigate("/");
+          }
+        }
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
