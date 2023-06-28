@@ -10,12 +10,12 @@ import Policies from "./pages/Policies";
 import TeacherPage from "./pages/TeacherPage";
 import News from "./pages/News";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <NavBar />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
@@ -27,6 +27,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
