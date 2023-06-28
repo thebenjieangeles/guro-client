@@ -64,7 +64,7 @@ function Signup() {
             </h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label className="block mb-2" htmlFor="email">
+                <label className="block mb-2 text-white" htmlFor="email">
                   Email:
                 </label>
                 <input
@@ -155,9 +155,10 @@ function Signup() {
             </form>
             <p className="mt-4 text-center text-[#FFFBE0]">
               Already have an account?{" "}
-              <Link
-                to="/login"
+
+              <button
                 className="text-orange-500 underline decoration-[#008080] decoration-2 font-bold hover:text-white"
+                onClick={handleLoginClick}
               >
                 Login here
               </Link>
