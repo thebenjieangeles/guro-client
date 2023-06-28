@@ -1,6 +1,6 @@
 import Signup from "./components/Signup";
 import Login from "./components/Login";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -23,7 +23,7 @@ function App() {
         <Route path="/teacher" element={<TeacherPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/policies" element={<Policies />} />"
+        <Route path="/policies" element={<Policies />} />
         <Route path="/news" element={<News />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

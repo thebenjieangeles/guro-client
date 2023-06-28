@@ -8,7 +8,7 @@ function TeacherPage() {
   axios.defaults.withCredentials = true;
   useEffect(() => {
     axios
-      .get("http://localhost:3001", { email, password })
+      .get("http://localhost:3000/login", { email, password })
       .then((res) => {
         if (res.data === "Success") {
           setSuc("Hello teacher");
