@@ -11,15 +11,15 @@ function NavBar() {
   };
 
   return (
-    <nav className="bg-blue-700 bg-opacity-50 shadow-md">
+    <nav className="bg-orange-500 bg-opacity-90 shadow-md">
       <div className="flex justify-between items-center py-4 px-8">
         <Link to="/" className="text-white text-lg font-bold">
-          <span className="text-amber-500 text-3xl">G</span>URO
-          <span className="text-amber-500 text-3xl">A</span>PP
+          <span className="text-[#008080] text-3xl font-extrabold">G</span>URO
+          <span className="text-[#008080] text-3xl font-extrabold"> A</span>PP
         </Link>
         <div className="md:hidden">
           <button
-            className="text-white hover:text-orange-500"
+            className="text-white hover:text-[#32cd32] font-bold text-2xl "
             onClick={toggleMenu}
           >
             {isMenuOpen ? (
@@ -35,7 +35,7 @@ function NavBar() {
           <li>
             <Link
               to="/"
-              className="text-white hover:text-orange-500 text-lg font-bold"
+              className="text-white hover:text-[#36454f] text-lg font-extrabold"
             >
               Home
             </Link>
@@ -43,7 +43,7 @@ function NavBar() {
           <li>
             <Link
               to="/about"
-              className="text-white hover:text-orange-500 text-lg font-bold"
+              className="text-white hover:text-[#36454f] text-lg font-extrabold"
             >
               About
             </Link>
@@ -51,7 +51,7 @@ function NavBar() {
           <li>
             <Link
               to="/contact"
-              className="text-white hover:text-orange-500 text-lg font-bold"
+              className="text-white hover:text-[#36454f] text-lg font-extrabold"
             >
               Contact
             </Link>
@@ -59,7 +59,7 @@ function NavBar() {
           <li>
             <Link
               to="/policies"
-              className="text-white hover:text-orange-500 text-lg font-bold"
+              className="text-white hover:text-[#36454f] text-lg font-extrabold"
             >
               Policies
             </Link>
@@ -67,7 +67,7 @@ function NavBar() {
           <li>
             <Link
               to="/news"
-              className="text-white hover:text-orange-500 text-lg font-bold"
+              className="text-white hover:text-[#36454f] text-lg font-extrabold"
             >
               News
             </Link>
@@ -75,7 +75,7 @@ function NavBar() {
           <li>
             <Link
               to="/signup"
-              className="text-white hover:text-orange-500 text-lg font-bold"
+              className="text-white hover:text-[#36454f] text-lg font-extrabold"
             >
               Signup
             </Link>
