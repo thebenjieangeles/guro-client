@@ -13,7 +13,7 @@ function TeacherPage() {
         if (res.data === "Success") {
           setSuc("Hello teacher");
         } else {
-          Navigate("/");
+          navigate("/");
         }
       })
       .catch((err) => console.log(err));

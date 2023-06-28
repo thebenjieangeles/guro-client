@@ -160,7 +160,6 @@ function Signup() {
                 className="text-orange-500 underline decoration-[#008080] decoration-2 font-bold hover:text-white"
                 onClick={handleLoginClick}
               >
-
                 Login here
               </Link>
             </p>

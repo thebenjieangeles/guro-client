@@ -74,11 +74,8 @@ function NavBar() {
           </li>
           <li>
             <Link
-
               to="/signup"
               className="text-white hover:text-[#36454f] text-lg font-extrabold"
-          
-
             >
               Login
             </Link>
