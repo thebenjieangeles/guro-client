@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import landingPage from "../assets/landingPage.png";
 import axios from "axios";
 
@@ -155,14 +155,12 @@ function Signup() {
             </form>
             <p className="mt-4 text-center text-[#FFFBE0]">
               Already have an account?{" "}
-
               <button
                 className="text-orange-500 underline decoration-[#008080] decoration-2 font-bold hover:text-white"
                 onClick={handleLoginClick}
               >
-
                 Login here
-              </Link>
+              </button>
             </p>
           </>
         )}
