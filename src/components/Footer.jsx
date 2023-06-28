@@ -47,7 +47,6 @@ function Footer() {
                 className="h-10 w-10"
               />
             </a>
-            <p className="text-sm hidden sm:block">Tel: 0918-1234567</p>
           </div>
         </div>
       </div>
