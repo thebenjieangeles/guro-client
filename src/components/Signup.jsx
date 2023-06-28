@@ -1,11 +1,14 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import landingPage from "../assets/landingPage.png";
+import axios from "axios";
 
 function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,6 +29,12 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios
+      .post("http://localhost:3001/register", { name, email, password })
+      .then((res) => {
+        navigate("/login");
+      })
+      .catch((err) => console.log(err));
   };
 
   const handleLoginClick = () => {
@@ -146,12 +155,14 @@ function Signup() {
             </form>
             <p className="mt-4 text-center text-[#FFFBE0]">
               Already have an account?{" "}
+
               <button
                 className="text-orange-500 underline decoration-[#008080] decoration-2 font-bold hover:text-white"
                 onClick={handleLoginClick}
               >
+
                 Login here
-              </button>
+              </Link>
             </p>
           </>
         )}
