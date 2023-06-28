@@ -54,12 +54,14 @@ function Signup() {
       className="h-screen flex justify-center items-center"
     >
       <div
-        style={{ backgroundColor: "#FF8E51" }}
+        style={{ backgroundColor: "#2A4674" }}
         className="p-8 rounded-lg shadow-md"
       >
         {hasAccount ? (
           <>
-            <h2 className="text-2xl font-semibold mb-6 text-center">Login</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center text-white">
+              Login
+            </h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label className="block mb-2" htmlFor="email">
@@ -75,7 +77,7 @@ function Signup() {
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2" htmlFor="password">
+                <label className="block mb-2 text-white" htmlFor="password">
                   Password:
                 </label>
                 <input
@@ -89,7 +91,7 @@ function Signup() {
               </div>
               <div className="flex justify-center">
                 <button
-                  className="bg-green-500 text-black px-4 py-2 rounded-lg hover:bg-green-400"
+                  className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-[#008080]"
                   type="submit"
                 >
                   Login
@@ -99,10 +101,12 @@ function Signup() {
           </>
         ) : (
           <>
-            <h2 className="text-2xl font-semibold mb-6 text-center">Sign Up</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center text-[#FFFBE0]">
+              Sign Up
+            </h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label className="block mb-2 " htmlFor="name">
+                <label className="block mb-2 text-[#FFFBE0]" htmlFor="name">
                   Name:
                 </label>
                 <input
@@ -115,7 +119,7 @@ function Signup() {
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2" htmlFor="email">
+                <label className="block mb-2 text-[#FFFBE0]" htmlFor="email">
                   Email:
                 </label>
                 <input
@@ -128,7 +132,7 @@ function Signup() {
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2" htmlFor="password">
+                <label className="block mb-2 text-[#FFFBE0]" htmlFor="password">
                   Password:
                 </label>
                 <input
@@ -142,16 +146,19 @@ function Signup() {
               </div>
               <div className="flex justify-center">
                 <button
-                  className="bg-green-500 text-black px-4 py-2 rounded-lg hover:bg-green-400"
+                  className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-[#008080]"
                   type="submit"
                 >
                   Register
                 </button>
               </div>
             </form>
-            <p className="mt-4 text-center">
+            <p className="mt-4 text-center text-[#FFFBE0]">
               Already have an account?{" "}
-              <Link to="/login" className="text-blue-500 underline">
+              <Link
+                to="/login"
+                className="text-orange-500 underline decoration-[#008080] decoration-2 font-bold hover:text-white"
+              >
                 Login here
               </Link>
             </p>

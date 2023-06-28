@@ -10,6 +10,7 @@ import Policies from "./pages/Policies";
 import TeacherPage from "./pages/TeacherPage";
 import News from "./pages/News";
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
