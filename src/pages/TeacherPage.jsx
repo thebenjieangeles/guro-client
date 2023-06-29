@@ -8,7 +8,7 @@ function TeacherPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/questions")
+      .get("http://localhost:3002/questions")
       .then((response) => {
         setQuestions(response.data);
       })

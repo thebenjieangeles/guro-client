@@ -9,13 +9,7 @@ function Policies() {
             <h1 className="md:w-[35rem] text-4xl mb-5 md:text-6xl lg:text-8xl text-black font-bold">
               Classroom Policies
             </h1>
-            <p className="text-2xl mb-7 md:text-3xl lg:text-5xl text-neutral-50 font-bold ">
-              <ul>
-                <li>Educational background</li>
-                <li>Teaching Experience</li>
-                <li>Fun facts</li>
-              </ul>
-            </p>
+            <p className="text-2xl mb-7 md:text-3xl lg:text-5xl text-neutral-50 font-bold "></p>
           </div>
           <div className="relative">
             <img
